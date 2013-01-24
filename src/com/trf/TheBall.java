@@ -1,13 +1,12 @@
-
 /**********************************************************
  *  Copyright (C),2013, Hebei North University.
- * PrjName：   TheBall
+ * PrjName锟斤拷   TheBall
  * FileName: TheBall.java
- * Author:   润发
- * Date:     2013-1-24 下午2:55:59  
+ * Author:   锟斤拷锟斤拷
+ * Date:     2013-1-24 锟斤拷锟斤拷2:55:59  
  * Version :
- * Description:一球从m米高度自由落下，每次落地后
- * 反跳回原高度的一半；再落下，求它在 第n次落地时，共经过多少米？第n次反弹多高？
+ * Description:一锟斤拷锟斤拷m锟阶高讹拷锟斤拷锟斤拷锟斤拷锟铰ｏ拷每锟斤拷锟斤拷锟截猴拷
+ * 锟斤拷锟斤拷锟斤拷原锟竭度碉拷一锟诫；锟斤拷锟斤拷锟铰ｏ拷锟斤拷锟斤拷锟斤拷 锟斤拷n锟斤拷锟斤拷锟斤拷时锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟阶ｏ拷锟斤拷n锟轿凤拷锟斤拷锟斤拷锟竭ｏ拷
  **********************************************************/
 package com.trf;
 import java.util.*;
@@ -18,10 +17,10 @@ public class TheBall {
 		Scanner input = new Scanner(System.in);
 		BallDowm bd = new BallDowm();
 		
-		System.out.print("输入高度 m =");
-		float m = input.nextFloat();
-		System.out.print("输入落地次数 n =");
-		int n = input.nextInt();
+		System.out.print("锟斤拷锟斤拷锟竭讹拷 m =");
+		private float m = input.nextFloat();
+		System.out.print("锟斤拷锟斤拷锟斤拷锟截达拷锟斤拷 n =");
+		private int n = input.nextInt();
 		input.close();
 		
 		bd.down(m, n);
@@ -29,13 +28,13 @@ public class TheBall {
 }
 class BallDowm{
 	public void down(float meter, int hits){
-		int i = 1;
-		float meters = meter;
+		private int i = 1;
+		private float meters = meter;
 		for(; i < hits; i++){
 			meters += meter;
 			meter = meter/2;
 		}
-		System.out.print("第"+hits+"次落地时，共经过"+meters+"米,第"+hits+"次反弹");
-		System.out.println(meter+"米。");
+		System.out.print("锟斤拷"+hits+"锟斤拷锟斤拷锟斤拷时锟斤拷锟斤拷锟斤拷锟斤拷"+meters+"锟斤拷,锟斤拷"+hits+"锟轿凤拷锟斤拷");
+		System.out.println(meter+"锟阶★拷");
 	}
 }
