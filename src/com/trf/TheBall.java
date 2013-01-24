@@ -1,12 +1,12 @@
 /**********************************************************
  *  Copyright (C),2013, Hebei North University.
- * PrjNameï¿½ï¿½   TheBall
+ * PrjName   TheBall
  * FileName: TheBall.java
- * Author:   ï¿½ï¿½ï¿½ï¿½
- * Date:     2013-1-24 ï¿½ï¿½ï¿½ï¿½2:55:59  
+ * Author:   Èó·¢
+ * Date:     2013-1-24 12:55:59  
  * Version :
- * Description:Ò»ï¿½ï¿½ï¿½ï¿½mï¿½×¸ß¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Øºï¿½
- * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ß¶Èµï¿½Ò»ï¿½ë£»ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×£ï¿½ï¿½ï¿½nï¿½Î·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß£ï¿½
+ * Description:Ò»Çò´ÓmÃ×¸ß¶È×ÔÓÉÂäÏÂ£¬Ã¿´ÎÂäµØºó·´Ìø»ØÔ­¸ß¶È
+ * µÄÒ»°ë£»ÔÙÂäÏÂ£¬ÇóËüÔÚ µÚn´ÎÂäµØÊ±£¬¹²¾­¹ý¶àÉÙÃ×£¿µÚn´Î·´µ¯¶à¸ß£¿
  **********************************************************/
 package com.trf;
 import java.util.*;
@@ -17,10 +17,10 @@ public class TheBall {
 		Scanner input = new Scanner(System.in);
 		BallDowm bd = new BallDowm();
 		
-		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ï¿½ m =");
-		private float m = input.nextFloat();
-		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½ n =");
-		private int n = input.nextInt();
+		System.out.print("ÊäÈë¸ß¶È m =");
+		float m = input.nextFloat();
+		System.out.print("ÊäÈëÂäµØ´ÎÊý n =");
+		int n = input.nextInt();
 		input.close();
 		
 		bd.down(m, n);
@@ -28,13 +28,13 @@ public class TheBall {
 }
 class BallDowm{
 	public void down(float meter, int hits){
-		private int i = 1;
-		private float meters = meter;
+		int i = 1;
+		float meters = meter;
 		for(; i < hits; i++){
 			meters += meter;
 			meter = meter/2;
 		}
-		System.out.print("ï¿½ï¿½"+hits+"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+meters+"ï¿½ï¿½,ï¿½ï¿½"+hits+"ï¿½Î·ï¿½ï¿½ï¿½");
-		System.out.println(meter+"ï¿½×¡ï¿½");
+		System.out.print("µÚ"+hits+"´ÎÂäµØ¹²¾­¹ý"+meters+"µÚ"+hits+"´Îµ¯Æð");
+		System.out.println(meter+"Ã×¡£");
 	}
 }
